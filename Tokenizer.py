@@ -10,4 +10,4 @@ class Tokenizer:
 
         for word in text.split():
             if len(word) > 0:
-                self.on_word(word)
+                self.on_word(word.lower())

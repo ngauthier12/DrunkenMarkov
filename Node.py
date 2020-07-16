@@ -7,6 +7,9 @@ class Node:
         self.countByNextNode = {}
 
     def increment(self, node):
-        count = self.countByNextNode(node, 0)
-        self.countByNextNode[node] = ++count
-        print(self.text + " => " + node.text + " : " + count)
+        count = self.countByNextNode.get(node, 0)
+        count += 1
+        self.countByNextNode[node] = count
+
+        #if count > 1:
+        #    print(self.text + " => " + node.text + " : " + str(count))

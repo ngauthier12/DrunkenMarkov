@@ -1,3 +1,5 @@
+import io
+
 from Tokenizer import *
 from Node import *
 
@@ -14,13 +16,21 @@ class Parser:
         self.lastNode = root
 
     def read(self, path):
-        file = open(path, "r")
+        file = io.open(path, mode="r", encoding="utf-8")
         text = file.read()
+        print("parsing " + path + " of len: " + str(len(text)))
         self.tokenizer.read(text)
 
     def save(self, path):
         pass
 
     def __on_word(self, word):
-        node = self.nodeByText.get(word, Node(word))
+        node = None
+        if word in self.nodeByText:
+            node = self.nodeByText[word]
+        else:
+            node = Node(word)
+            self.nodeByText[word] = node
+
         self.lastNode.increment(node)
+        self.lastNode = node

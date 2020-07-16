@@ -11,7 +11,7 @@ def learn():
         print("Expecting source(s) and destination paths")
         return False
 
-    for i in range(2, argc - 2):
+    for i in range(2, argc - 1):
         parser.read(sys.argv[i])
     parser.save(sys.argv[argc - 1])
 
