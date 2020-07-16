@@ -1,4 +1,5 @@
 import io
+import json
 
 from Tokenizer import *
 from Node import *
@@ -16,16 +17,21 @@ class Parser:
         self.lastNode = root
 
     def read(self, path):
-        file = io.open(path, mode="r", encoding="utf-8")
-        text = file.read()
+        with io.open(path, mode="r", encoding="utf-8") as file:
+            text = file.read()
         print("parsing " + path + " of len: " + str(len(text)))
         self.tokenizer.read(text)
 
     def save(self, path):
-        pass
+        map_node = lambda node: node.text
+        map_junction = lambda node: dict(zip(map(map_node, node.countByNextNode.keys()), node.countByNextNode.values()))
+        data = dict(zip(self.nodeByText.keys(), map(map_junction, self.nodeByText.values())))
+        print("saving data (json) at: " + path)
+
+        with io.open(path, mode="w", encoding="utf-8") as file:
+            json.dump(data, file, indent=4)
 
     def __on_word(self, word):
-        node = None
         if word in self.nodeByText:
             node = self.nodeByText[word]
         else:

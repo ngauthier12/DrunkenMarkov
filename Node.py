@@ -10,6 +10,3 @@ class Node:
         count = self.countByNextNode.get(node, 0)
         count += 1
         self.countByNextNode[node] = count
-
-        #if count > 1:
-        #    print(self.text + " => " + node.text + " : " + str(count))
