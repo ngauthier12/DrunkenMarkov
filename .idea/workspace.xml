@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3220485-ee07-474e-a88b-30de279c2948" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/test1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DrunkenMarkov.py" beforeDir="false" afterPath="$PROJECT_DIR$/DrunkenMarkov.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/Node.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tokenizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tokenizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_odyssey.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/the_odyssey.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +109,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="845" y="383" width="550" height="530" key="#Notifications" timestamp="1594857451592">

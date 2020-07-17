@@ -2,8 +2,8 @@
 
 class Node:
 
-    def __init__(self, text):
-        self.text = text
+    def __init__(self, key):
+        self.key = key
         self.countByNextNode = {}
 
     def increment(self, node):

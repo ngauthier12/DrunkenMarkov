@@ -2,9 +2,11 @@ import sys
 
 from Parser import *
 
+depth = 2
+
 
 def learn():
-    parser = Parser()
+    parser = Parser(depth)
     argc = len(sys.argv)
 
     if argc < 4:
