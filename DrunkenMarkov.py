@@ -1,6 +1,7 @@
 import sys
 
 from Parser import *
+from Writer import *
 
 depth = 2
 
@@ -21,6 +22,17 @@ def learn():
 
 
 def write():
+    writer = Writer(depth)
+    argc = len(sys.argv)
+
+    if argc < 4:
+        print("Expecting data file(s) and output paths")
+        return False
+
+    for i in range(2, argc - 1):
+        writer.load(sys.argv[i])
+    writer.write(sys.argv[argc - 1])
+
     return True
 
 
