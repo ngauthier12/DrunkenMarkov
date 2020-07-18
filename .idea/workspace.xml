@@ -20,10 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3220485-ee07-474e-a88b-30de279c2948" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/source/les_miserables.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/Node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrunkenMarkov.py" beforeDir="false" afterPath="$PROJECT_DIR$/DrunkenMarkov.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Writer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/verbose.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/verbose.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/english_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/verbose.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/english_verbose.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/test1.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +59,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\DrunkenMarkov\data" />
+      <recent name="E:\Projects\DrunkenMarkov\out" />
       <recent name="E:\Projects\DrunkenMarkov\source" />
     </key>
   </component>

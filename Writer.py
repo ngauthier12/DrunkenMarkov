@@ -7,10 +7,10 @@ from Node import *
 
 class Writer:
 
-    def __init__(self, depth):
+    def __init__(self,):
         self.nodeByWords = {}
         self.wordCount = 0
-        self.depth = depth
+        self.depth = 0
 
     def load(self, path):
         root = None
@@ -19,6 +19,9 @@ class Writer:
 
         self.wordCount = root["wordCount"]
         print("wordCount: " + str(self.wordCount))
+
+        self.depth = max(self.depth, root["depth"])
+        print("depth: " + str(self.depth))
 
         data = root["data"]
         for key, nodeData in data.items():

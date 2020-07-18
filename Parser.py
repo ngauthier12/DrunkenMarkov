@@ -34,6 +34,7 @@ class Parser:
         root = {}
         root["data"] = data
         root["wordCount"] = self.wordCount
+        root["depth"] = self.depth
 
         with io.open(path, mode="w", encoding="utf-8") as file:
             json.dump(root, file, indent=4)

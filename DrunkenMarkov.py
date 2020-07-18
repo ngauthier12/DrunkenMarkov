@@ -3,18 +3,17 @@ import sys
 from Parser import *
 from Writer import *
 
-depth = 2
-
 
 def learn():
-    parser = Parser(depth)
     argc = len(sys.argv)
-
-    if argc < 4:
-        print("Expecting source(s) and destination paths")
+    if argc < 5:
+        print("Expecting depth, source(s) and destination paths")
         return False
 
-    for i in range(2, argc - 1):
+    depth = int(sys.argv[2])
+    parser = Parser(depth)
+
+    for i in range(3, argc - 1):
         parser.read(sys.argv[i])
     parser.save(sys.argv[argc - 1])
 
@@ -22,7 +21,7 @@ def learn():
 
 
 def write():
-    writer = Writer(depth)
+    writer = Writer()
     argc = len(sys.argv)
 
     if argc < 4:
