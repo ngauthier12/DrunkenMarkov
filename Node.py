@@ -1,5 +1,6 @@
 import random
 
+random.seed(1337)
 
 class Node:
 
@@ -15,5 +16,4 @@ class Node:
     def get_random_next(self):
         choices = list(self.countByNextNode.keys())
         weights = list(self.countByNextNode.values())
-        return random.choices(population=choices, cum_weights=weights)[0]
-
+        return random.choices(population=choices, weights=weights)[0]

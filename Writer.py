@@ -48,7 +48,7 @@ class Writer:
 
     def __get_next_node_from_history(self, history):
         for n in range(self.depth, 1, -1):
-            word_list = map(lambda node: node.key, history[-n:])
+            word_list = list(map(lambda node: node.key, history[-n:]))
             node = Shared.try_get_node(self.nodeByWords, word_list)
             if node is not None:
                 return node
