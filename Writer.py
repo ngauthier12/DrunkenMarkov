@@ -9,12 +9,17 @@ class Writer:
 
     def __init__(self, depth):
         self.nodeByWords = {}
+        self.wordCount = 0
 
     def load(self, path):
-        data = None
+        root = None
         with io.open(path, mode="r", encoding="utf-8") as file:
-            data = json.load(file)
+            root = json.load(file)
 
+        self.wordCount = root["wordCount"]
+        print("wordCount: " + str(self.wordCount))
+
+        data = root["data"]
         for key, nodeData in data.items():
             node = Node(key)
             self.nodeByWords[key] = node

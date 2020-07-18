@@ -17,6 +17,7 @@ class Parser:
         self.nodeByWords = {root.key: root}
         self.depth = depth
         self.history = [root]
+        self.wordCount = 0
 
     def read(self, path):
         with io.open(path, mode="r", encoding="utf-8") as file:
@@ -30,8 +31,12 @@ class Parser:
         data = dict(zip(self.nodeByWords.keys(), map(map_junction, self.nodeByWords.values())))
         print("saving data (json) at: " + path + " of len: " + str(len(data)))
 
+        root = {}
+        root["data"] = data
+        root["wordCount"] = self.wordCount
+
         with io.open(path, mode="w", encoding="utf-8") as file:
-            json.dump(data, file, indent=4)
+            json.dump(root, file, indent=4)
 
     def __on_word(self, word):
         current = Shared.get_or_create_node(self.nodeByWords, [word])
@@ -46,3 +51,5 @@ class Parser:
 
         if len(self.history) > self.depth:
             self.history.pop(0)
+
+        self.wordCount += 1
