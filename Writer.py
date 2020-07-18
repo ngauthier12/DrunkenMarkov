@@ -10,6 +10,7 @@ class Writer:
     def __init__(self, depth):
         self.nodeByWords = {}
         self.wordCount = 0
+        self.depth = depth
 
     def load(self, path):
         root = None
@@ -29,6 +30,28 @@ class Writer:
                 node.countByNextNode[next_node] = count
 
     def write(self, path):
-        pass
+        first = Shared.get_or_create_node(self.nodeByWords, [""])
+        nodes = [first]
 
+        for i in range(self.wordCount):
+            choices = self.__get_next_node_from_history(nodes)
+            node = choices.get_random_next()
+            nodes.append(node)
 
+        words = map(lambda node: node.key, nodes)
+        text = " ".join(words)
+
+        print("writing text at: " + path + " of len: " + str(len(text)))
+
+        with io.open(path, mode="w", encoding="utf-8") as file:
+            file.write(text)
+
+    def __get_next_node_from_history(self, history):
+        for n in range(self.depth, 1, -1):
+            word_list = map(lambda node: node.key, history[-n:])
+            node = Shared.try_get_node(self.nodeByWords, word_list)
+            if node is not None:
+                return node
+        print("no node found in history for: '" + history[-1].key + "'")
+        print(history[-1:])
+        return None

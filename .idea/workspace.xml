@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a3220485-ee07-474e-a88b-30de279c2948" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/Node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shared.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Writer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,9 +164,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1103" y="482" width="611" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595031123605" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1594858133786">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595032701314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594858133786" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595032701314" />
   </component>
 </project>

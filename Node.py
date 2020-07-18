@@ -1,3 +1,4 @@
+import random
 
 
 class Node:
@@ -10,3 +11,9 @@ class Node:
         count = self.countByNextNode.get(node, 0)
         count += 1
         self.countByNextNode[node] = count
+
+    def get_random_next(self):
+        choices = list(self.countByNextNode.keys())
+        weights = list(self.countByNextNode.values())
+        return random.choices(population=choices, cum_weights=weights)[0]
+
