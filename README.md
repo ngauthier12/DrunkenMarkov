@@ -3,12 +3,16 @@
 
 ## Learning
 The syntax to gather a data-set from an input text is as follows:
+
 `py DrunkenMarkov.py --learn 2 source/the_odyssey.txt data/english_data.json`
+
 Where `2` is the recurrence depth, and the file paths are `{input} {data-set}`
 
 ## Writing
 The syntax to write text from a data-set is as follows:
+
 `py DrunkenMarkov.py --write data/english_data.json out/english_verbose.txt`
+
 Where the file paths are `{data-set} {output}`
 
 ## English Sample
@@ -26,6 +30,8 @@ Which makes no sense at all! ...but follows the general feel and syntax of the o
 `DrunkenMarkov` was also tested with french, and it seems to yield interesting results just as with english:
 
 > Fauchelevent s'était démis la rotule dans sa chute. Le père Madeleine le fit transporter dans une infirmerie qu'il avait établie pour ses ouvriers dans le bâtiment même de sa fabrique et qui était desservie par deux soeurs de charité. Le lendemain matin, le vieillard trouva un billet de mille francs sur sa table de nuit, avec ce mot de la main du père Madeleine: _Je vous achète votre charrette et votre cheval_. La charrette était brisée et le cheval était mort. Fauchelevent guérit, mais son genou resta ankylosé. M. Madeleine, par les recommandations des soeurs et de son curé, fit placer le bonhomme comme jardinier dans un couvent de femmes du quartier Saint-Antoine à Paris.
+
+Which, with a depth of `3` has given:
 
 > où jugera-t-on monsieur le procureur du roi? il arriva à cette phase de calme où l'on peut écouter. m. bamatabois était au nombre des jurés. il chercha javert, mais il ne le chercha pas, il le vit. ses yeux allèrent là naturellement, comme s'ils avaient su d'avance où était cette figure. il crut se voir lui-même, vieilli, non pas sans doute absolument semblable de visage, mais tout pareil d'attitude et d'aspect, avec ces cheveux hérissés, avec cette prunelle fauve et inquiète, avec cette blouse, tel qu'il était le jour où il était arrivé à jean valjean depuis l'aventure de petit-gervais. à partir de 1813, il adhéra ou il applaudit à toutes les manifestations hostiles. il refusa de le voir à son passage au retour de l'île d'elbe, et s'abstint d'ordonner dans son diocèse les prières publiques pour l'empereur pendant les cent-jours.
 
