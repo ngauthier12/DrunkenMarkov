@@ -20,14 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3220485-ee07-474e-a88b-30de279c2948" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/les_miserables.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DrunkenMarkov.py" beforeDir="false" afterPath="$PROJECT_DIR$/DrunkenMarkov.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Writer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/english_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/verbose.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/english_verbose.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/test1.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">

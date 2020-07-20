@@ -36,8 +36,25 @@ def write():
 
 
 def print_help():
-    # TODO -- write help
-    print("help...")
+    print("""
+DrunkenMarkov ~~~ Help
+-------------------------
+Two commands are available. The first one to build a data-set from source file(s). 
+The second one writes verbose from data-set(s).
+
+py DrunkenMarkov.py --learn {depth} {sourceFile1 sourceFile2 ...} {dataFile}
+    where depth is the recurrence depth (2 or 3 suggested, but can be more)
+    where one or more sourceFile(s) can be specified, assuming UTF8 format.
+    where the dataFile is exported as json, with UTF8 encoding.
+    
+py DrunkenMarkov.py --write {dataFile1 dataFile2 ...} {outputFile} 
+    where one or more dataFile(s) can be specified, each of them being the output of a --learn call.
+    where outputFile is exported as text, with UTF8 encoding.
+    
+Project is hosted on github, over here:
+https://github.com/ngauthier12/DrunkenMarkov
+
+""")
     return True
 
 
