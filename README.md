@@ -36,4 +36,7 @@ Which, with a depth of `3` has given:
 > où jugera-t-on monsieur le procureur du roi? il arriva à cette phase de calme où l'on peut écouter. m. bamatabois était au nombre des jurés. il chercha javert, mais il ne le chercha pas, il le vit. ses yeux allèrent là naturellement, comme s'ils avaient su d'avance où était cette figure. il crut se voir lui-même, vieilli, non pas sans doute absolument semblable de visage, mais tout pareil d'attitude et d'aspect, avec ces cheveux hérissés, avec cette prunelle fauve et inquiète, avec cette blouse, tel qu'il était le jour où il était arrivé à jean valjean depuis l'aventure de petit-gervais. à partir de 1813, il adhéra ou il applaudit à toutes les manifestations hostiles. il refusa de le voir à son passage au retour de l'île d'elbe, et s'abstint d'ordonner dans son diocèse les prières publiques pour l'empereur pendant les cent-jours.
 
 ## Contributors
-Please reach out to @ngauthier12 if you wich to contribute to the project. Source is also available under the GNU GPL-V3 license.
+Please reach out to @ngauthier12 if you wich to contribute to the project.
+Source is also available under the GNU GPL-V3 license.
+
+Special Thanks to Guy Gauthier for the original idea, implemented decades ago in C.
